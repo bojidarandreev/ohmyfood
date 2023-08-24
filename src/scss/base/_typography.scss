@@ -1,0 +1,37 @@
+@use 'base' as *;
+@use '../abstracts' as *;
+
+/* font-sizes */
+$font-weight-01: 300;
+$font-weight-02: 400;
+$font-weight-03: 500;
+$font-weight-04: 700;
+
+
+$font-size-01: 14px;
+/*14px*/
+$font-size-02: 15.043px;
+/*15.043px*/
+$font-size-03: 16px;
+/*16px*/
+$font-size-04: 17px;
+/*17px*/
+$font-size-05: 18px;
+/*18px*/
+$font-size-06: 24px;
+/*24px*/
+$font-size-07: 28px;
+/*28px*/
+$font-size-08: 30px;
+/*30px*/
+
+.special-title {
+    font-family: $secondary-font;
+    font-size: $font-size-07;
+    font-weight: $font-weight-02;
+}
+
+h2 {
+    font-size: $font-size-06;
+    font-weight: $font-weight-04;
+}

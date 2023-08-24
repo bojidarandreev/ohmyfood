@@ -1,0 +1,13 @@
+@use 'colors' as *;
+
+$box-shadow-01: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+$box-shadow-02: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+$box-shadow-03: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+
+
+$linear-gradient-purple-01: linear-gradient(0deg, $color-purple-dark 0%, $color-purple-light 100%);
+$linear-gradient-purple-02: linear-gradient(0deg, $color-purple-dark-02 0%, $color-purple-light-02 100%);
+
+
+
+

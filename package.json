@@ -1,0 +1,26 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Ohmyfoot Website development. Developing the HTML and the CSS of the mobile and desktop versions.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.65.1"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bojidarandreev/ohmyfood.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bojidarandreev/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/bojidarandreev/ohmyfood#readme"
+}

@@ -1,0 +1,135 @@
+@use '../base' as *;
+@use '../abstracts' as *;
+
+.selection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    //padding: 3%;
+    gap: 12px;
+    border: none;
+    padding-bottom: 40px;
+    
+    &__item {
+        position: relative;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
+
+        &:hover {
+            width: 80%;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+
+            .selection__checkmark {
+                height: 100%;
+                width: 17%;
+                right: -17%;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                font-size: 0;
+                display: flex; 
+                justify-content: center;
+                align-items: center;
+                
+                &-icon {
+                    width: 20px;
+                    height: 20px;
+                    visibility: visible;
+                }
+            }
+
+        }
+    }
+
+    &__info {
+        width: 90%;
+        h3 {
+            margin: 0;
+        }
+    }
+    // &__info {
+    //     
+       
+        
+    // }
+
+    &__title {
+        font-size: $font-size-03;
+        font-weight: $font-weight-01;
+        text-transform: uppercase;
+        &::after {
+            content: " ";
+            display: block;
+            width: 40px;
+            height: 3px;
+            margin: 5px 0 7px 0;
+            background: $color-green-light;
+        }
+    }
+
+    .overflowing-text {
+        margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-size: $font-size-02;
+        font-weight: $font-weight-01;
+
+
+    }
+
+ 
+
+
+
+
+    &__price {
+        align-self: flex-end;
+        font-weight: $font-weight-04;
+    }
+
+    &__checkmark {
+        position: absolute;
+        right: 0;
+        width: 0%;
+        font-size: 0;
+        background-color: $color-green-light;
+
+        &-icon {
+            width: 0px;
+            height: 0px;
+            visibility: hidden;
+        }
+
+    }
+
+
+}
+
+
+
+
+
+
+.selection {
+    
+
+    &__title {
+      
+    }
+    &__item {
+        background-color: $color-white;
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    &__info{
+        
+    }
+    &__price {
+        margin: 0;
+    }
+}

@@ -1,0 +1,45 @@
+@use '../base' as *;
+@use '../abstracts' as *;
+
+
+.heading-section {
+    
+    &__image {
+        position: relative;
+        z-index: 2;
+    }
+    &__info {
+        position: relative;
+        z-index: 3;
+        margin-top: -47px;
+        padding: 32px 17px 40px 17px;
+        border-radius: 40px 40px 0px 0px;
+        background-color: $color-gray-light;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    &__icon, &__icon::before {
+        display: inline-block;
+        font-size: $font-size-05;
+        font-weight: $font-weight-01;
+        width: 22px;
+        height: 21px;
+    }
+    &__title {
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+        width: 80%;
+    }
+}
+
+.menu-main-container {
+    display: flex;
+    flex-direction: column;
+    background-color: $color-gray-light;
+}
+
+
+

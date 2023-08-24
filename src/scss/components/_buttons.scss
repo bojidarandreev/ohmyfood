@@ -1,0 +1,138 @@
+@use '../base' as *;
+@use '../abstracts' as *;
+
+.selection, .heading {
+    &__button {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+        width: 186px;
+        height: 50px;
+        border-radius: 25px;
+        border: none;
+        font-size: $font-size-03;
+        font-weight: $font-weight-03;
+        color: $color-white;
+        background: $linear-gradient-purple-01;
+        //background-color: $linear-gradient-purple-01;
+        box-shadow: $box-shadow-01;
+        transition: 
+        font-size 0.7s,
+        background-color 0.7s,
+        height 0.7s,
+        box-shadow 0.7s;
+
+        &:hover {
+            background: $linear-gradient-purple-02;
+            height: calc(50px + 1.5px);
+            box-shadow: $box-shadow-02;
+            font-size: calc($font-size-03 + 0.3px);
+        }
+        
+        a {
+            
+            vertical-align: baseline;
+            font-size: inherit;
+            font-weight: inherit;
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+}
+
+.selection{
+    &__button {
+        transition: 
+        width 0.4s;
+        &:hover {
+            width: calc(186px + 3.1px);
+        }
+    }
+}
+
+.heading {
+    padding-bottom: 30px;
+    &__button {
+        width: 218px;
+        text-align:center;
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 0;
+        transition: 
+        width 0.4s;
+        &:hover {
+            width: calc(218px + 3.5px);
+        }
+    }
+}
+
+
+.guides__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding-top: 5px;
+        padding-bottom: 68px;
+}
+.guide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+
+    &__num{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 13px;
+        width: 23px;
+        height: 23px;
+        border-radius: 12px ;
+        background-color: $color-purple-dark;
+        font-size: $font-size-01;
+        font-weight: $font-weight-02;
+        color: $color-white;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+        width: 322px;
+        height: 72px;
+        border-radius: 20px;
+        background-color: $color-gray-light;
+        box-shadow: $box-shadow-03;
+
+
+    }
+    &__icon.fa-solid::before {
+        font-family: $font-awesome!important;
+        padding-left: 30px;
+        font-size: $font-size-05;
+        color: $color-gray-dark;
+        padding-right: 20px;
+        
+    }
+    &__text {
+        text-align:left;
+        font-family: $primary-font;
+        font-size: $font-size-05;
+        font-weight: $font-weight-04;
+        text-decoration: none;
+        color: $color-black;
+        &:hover {
+            &::before {
+                color: $color-purple-dark;
+            }
+            
+        }
+         
+    }
+}
