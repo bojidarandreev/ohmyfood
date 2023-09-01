@@ -2,20 +2,38 @@
 @use '../abstracts' as *;
 
 .footer {
+    
     padding: 22px 25px 24px 25px;
     background-color: $color-gray-darker;
     color: $color-white;
     display: flex; 
     flex-direction: column;
     gap: 25px;
+    @include lg {
+        flex-direction: row-reverse;
+        justify-content: end;
+        align-items: center;
+        height: 84px;
+        padding-top: 30px;
+        padding-bottom: 0;
+    }
 
     .logo {
         display: block;
+        @include lg {
+            padding-left: 50px;
+            padding-top: 7px;
+        }
         &-image {
             width: 139px;
             height: 27px;
+            @include lg {
+                transform: scale(0.7);
+            }
         }
     }
+    
+    
     a {
         color: $color-white;
     }
@@ -28,8 +46,15 @@
         flex-direction: column;
         gap: 7px;
         list-style-type: none;
+        @include lg {
+            flex-direction: row;
+            justify-content: end;
+        }
     }
     li {
+        @include lg {
+            padding-left: 15px;
+        }
         a {
             text-decoration: none;
         }

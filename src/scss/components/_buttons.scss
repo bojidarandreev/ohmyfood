@@ -68,14 +68,46 @@
     }
 }
 
+.guides {
+    @include lg {
+        display: flex;
+        flex-direction:column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    &__main-title {
+        @include lg {
+            width: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @include xl {
+            margin-left: 0;
+            width: 100%;
+        max-width: 1080px;
+        }
+
+
+        
+    }
+}
 
 .guides__container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 20px;
+        gap: 25px;
         padding-top: 5px;
         padding-bottom: 68px;
+        @include xl {
+            flex-direction: row;
+            justify-content: center;
+            gap: 24px;
+        }
 }
 .guide {
     display: flex;
@@ -118,6 +150,8 @@
         font-size: $font-size-05;
         color: $color-gray-dark;
         padding-right: 20px;
+        transition: all 0.3s ease-in-out;
+
         
     }
     &__text {
@@ -129,7 +163,10 @@
         color: $color-black;
         &:hover {
             &::before {
+                padding-left: 29px;
+                font-size: calc($font-size-05 + 1px);
                 color: $color-purple-dark;
+                
             }
             
         }

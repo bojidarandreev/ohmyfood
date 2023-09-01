@@ -10,6 +10,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include lg {
+        padding: 0;
+        height: 96px;
+    }
 
     &__icon {
         color: $color-gray-darker;
@@ -18,11 +22,17 @@
         position: absolute;
         left: 17px;
         top: 20px;
+        @include lg {
+            top: 30px;
+        }
     }
     &__logo {
         
         img {
             width: 162px;
+            @include lg {
+                width: 200px;
+            }
         }
     }
     

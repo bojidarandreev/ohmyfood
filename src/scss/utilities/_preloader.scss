@@ -1,0 +1,137 @@
+@use '../base' as *;
+@use '../abstracts' as *;
+  
+  
+  
+  .main-container {
+    position: relative;
+    z-index: 9;
+    background-color: $color-white;
+  }
+  .preloader {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+    background: $linear-gradient-purple-01;
+    text-align: center;
+    visibility: hidden;
+    opacity: 1;
+    animation: loader-visible 7s,
+    loader-opacity 7s;
+    
+
+    &__content {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        font-family: $secondary-font;
+        font-weight: $font-weight-04;
+        font-size: $font-size-08;
+        color: $color-black;
+      }
+
+      span {
+        position: relative;
+        top: 0.63em;  
+        display: inline-block;
+         
+        opacity: 0;
+        transform: rotateX(-90deg);
+      }
+
+      &__let1 {
+          animation: drop 1.2s ease-in-out infinite;
+          animation-delay: 1.2s;
+      }
+
+      &__let2 {
+          animation: drop 1.2s ease-in-out infinite;
+          animation-delay: 1.3s;
+      }
+
+      &__let3 {
+          animation: drop 1.2s ease-in-out infinite;
+          animation-delay: 1.4s;
+      }
+
+      &__let4 {
+          animation: drop 1.2s ease-in-out infinite;
+          animation-delay: 1.5s;
+
+      }
+
+      &__let5 {
+          animation: drop 1.2s ease-in-out infinite;
+          animation-delay: 1.6s;
+      }
+
+      &__let6 {
+          animation: drop 1.2s ease-in-out infinite;
+          animation-delay: 1.7s;
+      }
+
+      &__let7 {
+          animation: drop 1.2s ease-in-out infinite;
+          animation-delay: 1.8s;
+      }
+
+      &__let8 {
+          animation: drop 1.2s ease-in-out infinite;
+          animation-delay: 1.9s;
+      }
+  }
+
+  @keyframes loader-visible {
+    from {
+        visibility: hidden;
+    }
+    to {
+        visibility: visible;
+    }
+  }
+
+  @keyframes loader-opacity {
+    0% {
+        opacity: 1;
+    }
+    
+    97% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+  }
+
+  @keyframes drop {
+      10% {
+          opacity: 0.5;
+      }
+      20% {
+          opacity: 1;
+          top: 3.78em;
+          transform: rotateX(-360deg);
+      }
+      80% {
+          opacity: 1;
+          top: 3.78em;
+          transform: rotateX(-360deg);
+      }
+      90% {
+          opacity: 0.5;
+      }
+      100% {
+          opacity: 0;
+          top: 6.94em
+      }
+  }
+  
