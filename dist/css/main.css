@@ -587,11 +587,16 @@ h2 {
   justify-content: flex-start;
   align-items: center;
   gap: 20px;
-  width: 322px;
+  width: 287px;
   height: 72px;
   border-radius: 20px;
   background-color: #F6F6F6;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+@media (min-width: 480px) {
+  .guide__content {
+    width: 322px;
+  }
 }
 .guide__icon.fa-solid::before {
   font-family: "Font Awesome 6 Free" !important;

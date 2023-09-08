@@ -136,12 +136,14 @@
         justify-content: flex-start;
         align-items: center;
         gap: 20px;
-        width: 322px;
+        width: 287px;
         height: 72px;
         border-radius: 20px;
         background-color: $color-gray-light;
         box-shadow: $box-shadow-03;
-
+        @include sm {
+            width: 322px;
+        }
 
     }
     &__icon.fa-solid::before {
