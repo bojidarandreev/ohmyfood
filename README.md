@@ -1,7 +1,7 @@
 # ohmyfood
 Ohmyfoot Website development. Developing the HTML and the CSS of the mobile and desktop versions.
 
-Le projet en ligne: http://ohmyfood.bozhidara1.sg-host.com/menu/la-note-echantee.html
+Le projet en ligne: http://ohmyfood.bozhidara1.sg-host.com
 
 Vous avez intégré Ohmyfood en tant que développeur junior. Il s’agit d’une jeune startup qui voudrait s'imposer sur le marché de la restauration. Déjà présente à New-York, elle souhaite désormais faire sa place à Paris. 
 
